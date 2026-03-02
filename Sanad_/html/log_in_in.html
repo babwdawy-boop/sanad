@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SANAD - Login</title>
+  <link rel="stylesheet" href="bootstrap.min.css" />
+  <style>
+    body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color:#f5f7fa;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  width: 650px;
+  background: #fff;
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  background: #06A3DA;
+  border-bottom-left-radius: 50% 20%;
+  border-bottom-right-radius: 50% 20%;
+}
+
+.content {
+  position: relative;
+  padding: 10px 30px 40px;
+  background-color: #06A3DA;
+  color: white;
+}
+
+.logo {
+  
+  
+  width: 250px;
+  height: 200px;
+  margin: 0 25%;
+  opacity: 0;
+  transform: scale(0.7);
+  animation: logoFadeIn 2.5s ease infinite;
+  transition: 2s;
+}
+
+/**/
+/* حركة اللوجو */
+@keyframes logoFadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.7);
+    filter: drop-shadow(0 0 0px #06A3DA);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 15px #06A3DA);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    filter: drop-shadow(0 0 5px #06A3DA);
+  }
+}
+.text-muted{
+  text-align: center;
+}.form-control{
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  margin: 10px;
+}.content_1{
+  text-align: center;
+}.btn{
+  margin-top: 20px;
+  border: none;
+  background-color:#06A3DA;
+  
+}.btn a{
+  text-decoration: none;
+   color: #fff;
+   border: 2px solid ;
+   padding: 7px 15px;
+   border-radius: 5px;
+}.btn a:hover{
+  background-color: #fff;
+  color: #06A3DA;
+  transition: 0.4s;
+}
+/**/
+/*.btn-login {
+  margin-top: 20px;
+  background-color: #D9D9D9;
+  color: #0BA29D;
+  font-weight: 600;
+  border-radius: 25px;
+  border: none;
+}.btn-login a{
+  width: 100%;
+  padding: 20px;
+  
+  text-decoration: none;
+  color: #06A3DA;
+
+}
+
+.btn-login:hover {
+  background-color: #ffffff;
+  color: white;
+}
+
+.btn-outline-light {
+  border-color: white;
+  color: white;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 3px;
+}
+
+.btn-outline-light:hover {
+  background-color:#0BA29D;
+  color: #ffffff;
+}*/
+
+  </style>
+</head>
+
+<body>
+  <div class="login-container">
+    <div class="wave"></div>
+    <div class="content text-center">
+      <img src="../img/WhatsApp_Image_2025-11-02_at_16.21.10_8dbd2d5f-removebg-preview.png"  class="logo mb-3" />
+      
+      <p class="text-muted mb-4">Enter as Administ</p>
+      <a ></a>
+      <div class="btn-group mb-4">
+       
+      </div>
+
+      <form  class="content_1">
+        <div class="mb-3 ">
+          <input type="text" class="form-control" placeholder="User Name" required />
+          <input type="password" class="form-control" placeholder="Password" required />
+        </div>
+        <button  type="submit" class="btn btn-login w-100 mt-2"><a href="./dashbord.html">Go</a></button>
+      </form>
+
+    
+      </p>
+    </div>
+  </div>
+</body>
+</html>

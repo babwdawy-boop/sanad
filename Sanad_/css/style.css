@@ -26,6 +26,7 @@
             text-decoration: none;
         }body{
             scroll-behavior: smooth;
+            position: relative;
         }
         .display-11{
             text-transform: capitalize;
@@ -136,11 +137,15 @@ h6,
 }
 
 .back-to-top {
-    position: fixed;
+    position: absolute;
     display: none;
     right: 45px;
-    bottom: 45px;
+    bottom: 25px;
     z-index: 99;
+}@media (max-width: 576px){
+    .back-to-top {
+        right:25px;
+    }
 }
  
 .top-shape::before {
@@ -416,7 +421,7 @@ h6,
   padding:4px  10px;
   border-radius: 10px 0  0 10px  ;
   outline: none;
-  }.foters .download .form_{
+  }.foters .download .form_a{
     margin: 20px 0;
   }.foters .download .form_ a{
     display: inline;
@@ -440,4 +445,14 @@ h6,
       padding: 3px;
       border: 1px solid var(--bg-color);
       border-radius: 5px;
+}@media (max-width: 576px){
+    .foters{
+        flex-direction: column;
+    }.foters .download .form_ a{
+        padding: 2px;
+        }.foters .download input{
+            padding: 2px 8px ;
+    }.foters h3{
+        border-radius: 0;
+    }
 }
